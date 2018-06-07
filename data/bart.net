@@ -1,0 +1,147 @@
+*Network
+*Vertices 45
+1 "Millbrae"
+2 "San Bruno"
+3 "San Francisco International Airport (SFO)"
+4 "South San Francisco"
+5 "Colma"
+6 "Daly City"
+7 "Balboa Park"
+8 "Glen Park"
+9 "24th Street Mission"
+10 "16th Street Mission"
+11 "Civic Center / UN Plaza"
+12 "Powell Street"
+13 "Montgomery Street"
+14 "Embarcadero"
+15 "West Oakland"
+16 "12th Street / Oakland City Center"
+17 "19th Street / Oakland"
+18 "MacArthur"
+19 "Ashby"
+20 "Downtown Berkeley"
+21 "North Berkeley"
+22 "El Cerrito Plaza"
+23 "El Cerrito del Norte"
+24 "Richmond"
+25 "Rockridge"
+26 "Orinda"
+27 "Lafayette"
+28 "Walnut Creek"
+29 "Pleasant Hill / Contra Costa Centre"
+44 "Concord"
+45 "North Concord / Martinez"
+30 "Pittsburg / Bay Point"
+31 "Lake Merritt"
+32 "Fruitvale"
+33 "Coliseum"
+34 "Oakland Internatonal Airport (OAK)"
+35 "San Leandro"
+36 "Bay Fair"
+37 "Castro Valley"
+38 "West Dublin / Pleasanton"
+39 "Dublin / Pleasanton"
+40 "Hayward"
+41 "South Hayward"
+42 "Union City"
+43 "Fremont"
+*Edges
+1 2 1
+2 4 1
+4 5 1
+5 6 1
+6 7 1
+7 8 1
+8 9 1
+9 10 1
+10 11 1
+11 12 1
+12 13 1
+13 14 1
+14 15 1
+15 16 1
+16 17 1
+17 18 1
+18 19 1
+19 20 1
+20 21 1
+21 22 1
+22 23 1
+23 24 1
+3 2 1
+2 4 1
+4 5 1
+5 6 1
+6 7 1
+7 8 1
+8 9 1
+9 10 1
+10 11 1
+11 12 1
+12 13 1
+13 14 1
+14 15 1
+15 16 1
+16 17 1
+17 18 1
+18 25 1
+25 26 1
+26 27 1
+27 28 1
+28 29 1
+29 44 1
+44 45 1
+45 30 1
+6 7 1
+7 8 1
+8 9 1
+9 10 1
+10 11 1
+11 12 1
+12 13 1
+13 14 1
+14 15 1
+15 31 1
+31 32 1
+32 33 1
+33 35 1
+35 36 1
+36 37 1
+37 38 1
+38 39 1
+6 7 1
+7 8 1
+8 9 1
+9 10 1
+10 11 1
+11 12 1
+12 13 1
+13 14 1
+14 15 1
+15 31 1
+31 32 1
+32 33 1
+33 35 1
+35 36 1
+36 40 1
+40 41 1
+41 42 1
+42 43 1
+24 23 1
+23 22 1
+22 21 1
+21 20 1
+20 19 1
+19 18 1
+18 17 1
+17 16 1
+16 31 1
+31 32 1
+32 33 1
+33 35 1
+35 36 1
+36 40 1
+40 41 1
+41 42 1
+42 43 1
+33 34 1

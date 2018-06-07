@@ -122,35 +122,41 @@ with open(args.csvfile) as csvfile:
 
     # parse out relevant information in row
     for row in csvreader:
-        date = datetime.strptime(row[0], '%Y-%m-%d')
-        weekday = date.weekday()
-        hour = int(row[1])
-        source = station_names[row[2]]
-        destination = station_names[row[3]]
-        passengers = int(row[4])
+        linenumber = csvreader.line_num
 
-        # skip hours not in desired subset
-        if hour not in args.hours:
-            continue
+        try:
+            date = datetime.strptime(row[0], '%Y-%m-%d')
+            weekday = date.weekday()
+            hour = int(row[1])
+            source = station_names[row[2]]
+            destination = station_names[row[3]]
+            passengers = int(row[4])
 
-        # skip weekdays not in desired subset
-        if weekday not in args.weekday:
-            continue
+            # skip hours not in desired subset
+            if hour not in args.hours:
+                continue
 
-        # skip dates not in desired subset
-        if args.startdate is not None and date < args.startdate:
-            continue
+            # skip weekdays not in desired subset
+            if weekday not in args.weekday:
+                continue
 
-        if args.enddate is not None and date > args.enddate:
-            continue
+            # skip dates not in desired subset
+            if args.startdate is not None and date < args.startdate:
+                continue
 
-        # for every adjacent pair of vertices in the shortest path
-        for index in range(0, len(shortest_paths[source][destination]) - 1):
-            first = shortest_paths[source][destination][index]
-            second = shortest_paths[source][destination][index + 1]
+            if args.enddate is not None and date > args.enddate:
+                continue
 
-            # add the number of passengers to the edge weight
-            base_graph[first][second]['weight'] += passengers
+            # for every adjacent pair of vertices in the shortest path
+            for index in range(0, len(shortest_paths[source][destination]) - 1):
+                first = shortest_paths[source][destination][index]
+                second = shortest_paths[source][destination][index + 1]
+
+                # add the number of passengers to the edge weight
+                base_graph[first][second]['weight'] += passengers
+        except:
+            print('Exception occurred at line number', linenumber, 'in', args.csvfile)
+            raise
 
 # remove original weights if specified
 if args.keepweights is False:
