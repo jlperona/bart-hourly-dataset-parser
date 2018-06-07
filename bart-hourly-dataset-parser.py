@@ -134,7 +134,7 @@ with open(args.csvfile) as csvfile:
             continue
 
         # skip weekdays not in desired subset
-        if weekday not in args.weekdays:
+        if weekday not in args.weekday:
             continue
 
         # skip dates not in desired subset
