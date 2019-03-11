@@ -9,6 +9,7 @@ station_names = {
     '16TH' : '16th Street Mission',
     '19TH' : '19th Street / Oakland',
     '24TH' : '24th Street Mission',
+    'ANTC' : 'Antioch',
     'ASHB' : 'Ashby',
     'BALB' : 'Balboa Park',
     'BAYF' : 'Bay Fair',
@@ -33,7 +34,9 @@ station_names = {
     'MONT' : 'Montgomery Street',
     'NBRK' : 'North Berkeley',
     'NCON' : 'North Concord / Martinez',
+    'OAKL' : 'Oakland International Airport (OAK)',
     'ORIN' : 'Orinda',
+    'PCTR' : 'Pittsburg Center',
     'PHIL' : 'Pleasant Hill / Contra Costa Centre',
     'PITT' : 'Pittsburg / Bay Point',
     'PLZA' : 'El Cerrito Plaza',
@@ -47,6 +50,7 @@ station_names = {
     'SSAN' : 'South San Francisco',
     'UCTY' : 'Union City',
     'WCRK' : 'Walnut Creek',
+    'WARM' : 'Warm Springs / South Fremont'
     'WDUB' : 'West Dublin / Pleasanton',
     'WOAK' : 'West Oakland'
 }
@@ -66,10 +70,6 @@ def valid_type(input):
         raise argparse.ArgumentTypeError(msg)
 
     return input
-
-# the Oakland International Airport (OAK) opened
-# the West Dublin / Pleasanton station opened 2011-02-19
-# traffic on either side will be identical because of that
 
 parser = argparse.ArgumentParser(
     description = 'Take in BART origin-destination data and a source graph. Output a weighted graph.')

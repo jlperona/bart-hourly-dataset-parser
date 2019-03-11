@@ -125,36 +125,32 @@ Dates before this (of which there are not that many) will have traffic identical
 The *Oakland International Airport (OAK)* station opened for revenue service on 2014-11-22.
 Dates before this will have no traffic to this node, as this is a terminal station.
 This may pose a problem for certain programs, such as Gephi.
-I have not found the four-letter code for this station.
-When I do, I will update the dictionary to make the translation.
 
 #### Warm Springs / South Fremont
 
 The *Warm Springs / South Fremont* station opened for revenue service on 2017-03-25.
 Dates before this will have no traffic to this node, as this is a terminal station.
 This may pose a problem for certain programs, such as Gephi.
-I have not found the four-letter code for this station.
-When I do, I will update the dictionary to make the translation.
+
+#### eBART
+
+The eBART extension to *Pittsburg Center* and *Antioch* opened for revenue service on 2018-05-26.
+Dates before this will have no traffic to either of these nodes, as these nodes extend past a terminal station.
+This may pose a problem for certain programs, such as Gephi.
 
 ### Future Network Changes
 
 There are also changes that have been made or planned since the last day available in the dataset.
 
-#### eBART
-
-The eBART extension to *Pittsburg Center* and *Antioch* opened for revenue service on 2018-05-26.
-Currently, no data is available past 2017.
-Once data is available, the stations and their four-letter codes can be added.
-
 #### BART to Silicon Valley
 
 The Silicon Valley BART extension in planned in two phases.
-The following stations are (currently) planned to open in fall 2018:
+The following stations are (currently) planned to open in fall 2019:
 
 * *Milpitas*
 * *Berryessa*
 
-The following stations are currently planned to open in 2025 - 2026:
+The following stations are currently planned to open in 2026:
 
 * *Alum Rock*
 * *Downtown San Jose*
@@ -175,10 +171,8 @@ The following lines run to *Warm Springs / South Fremont*:
 * Richmond - Warm Springs / South Fremont
 * Warm Springs / South Fremont - Daly City
 
-These lines run to Warm Springs at mutually exclusive times.
-This is due to a shortage of trains.
-As the Fleet of the Future continues to arrive, this time change should eventually disappear.
-
+At one point, these lines ran to Warm Springs at mutually exclusive times due to a shortage of trains.
+The time change eventually disappeared.
 No changes need to be made to graph files to account for this.
 The lines run between the same stations, so there is only one shortest path to take.
 
