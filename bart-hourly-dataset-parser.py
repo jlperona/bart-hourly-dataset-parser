@@ -9,7 +9,7 @@ station_names = {
     '16TH' : '16th Street Mission',
     '19TH' : '19th Street / Oakland',
     '24TH' : '24th Street Mission',
-    'ANTC' : 'Antioch',
+    'ANTI' : 'Antioch',
     'ASHB' : 'Ashby',
     'BALB' : 'Balboa Park',
     'BAYF' : 'Bay Fair',
@@ -36,7 +36,6 @@ station_names = {
     'NCON' : 'North Concord / Martinez',
     'OAKL' : 'Oakland International Airport (OAK)',
     'ORIN' : 'Orinda',
-    'PCTR' : 'Pittsburg Center',
     'PHIL' : 'Pleasant Hill / Contra Costa Centre',
     'PITT' : 'Pittsburg / Bay Point',
     'PLZA' : 'El Cerrito Plaza',
@@ -50,7 +49,7 @@ station_names = {
     'SSAN' : 'South San Francisco',
     'UCTY' : 'Union City',
     'WCRK' : 'Walnut Creek',
-    'WARM' : 'Warm Springs / South Fremont'
+    'WSPR' : 'Warm Springs / South Fremont'
     'WDUB' : 'West Dublin / Pleasanton',
     'WOAK' : 'West Oakland'
 }

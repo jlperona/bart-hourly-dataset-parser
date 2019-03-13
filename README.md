@@ -132,11 +132,22 @@ The *Warm Springs / South Fremont* station opened for revenue service on 2017-03
 Dates before this will have no traffic to this node, as this is a terminal station.
 This may pose a problem for certain programs, such as Gephi.
 
+Note that BART is inconsistent in their 4-letter station acronyms for *Warm Springs / South Fremont*.
+In their [station KML file](https://www.bart.gov/schedules/developers/geo), *Warm Springs / South Fremont* is `WARM`.
+However, in the actual data, *Warm Springs / South Fremont* is `WSPR`.
+I'm not sure why.
+
 #### eBART
 
 The eBART extension to *Pittsburg Center* and *Antioch* opened for revenue service on 2018-05-26.
 Dates before this will have no traffic to either of these nodes, as these nodes extend past a terminal station.
 This may pose a problem for certain programs, such as Gephi.
+
+Note that BART is inconsistent in their 4-letter station acronyms for *Antioch*.
+In their [station KML file](https://www.bart.gov/schedules/developers/geo), *Antioch* is `ANTC`.
+However, in the actual data, *Antioch* is `ANTI`.
+*Pittsburg Center* also doesn't appear in the data at all.
+I'm not sure why.
 
 ### Future Network Changes
 

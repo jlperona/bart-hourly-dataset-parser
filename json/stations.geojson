@@ -448,7 +448,7 @@
     {
       "attributes" : {
         "OID" : 43,
-        "Name" : "Warm Springs/South Fremont (WARM)"
+        "Name" : "Warm Springs/South Fremont (WSPR)"
       },
       "geometry" : {
         "x" : -121.93931299999997,
@@ -488,7 +488,7 @@
     {
       "attributes" : {
         "OID" : 47,
-        "Name" : "Antioch Station (ANTC)"
+        "Name" : "Antioch Station (ANTI)"
       },
       "geometry" : {
         "x" : -121.77991646599997,
