@@ -1,34 +1,27 @@
 {
-  "displayFieldName" : "",
-  "fieldAliases" : {
-    "OID" : "OID",
-    "Name" : "Name"
-  },
   "geometryType" : "esriGeometryPoint",
-  "spatialReference" : {
-    "wkid" : 4326,
-    "latestWkid" : 4326,
-    "vcsWkid" : 5773,
-    "latestVcsWkid" : 5773
-  },
   "fields" : [
     {
-      "name" : "OID",
-      "type" : "esriFieldTypeOID",
-      "alias" : "OID"
+      "name" : "id",
+      "type" : "esriFieldTypeOID"
     },
     {
-      "name" : "Name",
+      "name" : "name",
       "type" : "esriFieldTypeString",
-      "alias" : "Name",
+      "length" : 320
+    },
+    {
+      "name" : "abbreviation",
+      "type" : "esriFieldTypeString",
       "length" : 320
     }
   ],
   "features" : [
     {
       "attributes" : {
-        "OID" : 1,
-        "Name" : "12th St. Oakland City Center (12TH)"
+        "id" : 1,
+        "name" : "12th St/Oakland City Center",
+        "abbreviation" : "12TH"
       },
       "geometry" : {
         "x" : -122.27144999999996,
@@ -37,8 +30,9 @@
     },
     {
       "attributes" : {
-        "OID" : 2,
-        "Name" : "16th St. Mission (16TH)"
+        "id" : 2,
+        "name" : "16th St Mission",
+        "abbreviation" : "16TH"
       },
       "geometry" : {
         "x" : -122.41969399999999,
@@ -47,8 +41,9 @@
     },
     {
       "attributes" : {
-        "OID" : 3,
-        "Name" : "19th St. Oakland (19TH)"
+        "id" : 3,
+        "name" : "19th St/Oakland",
+        "abbreviation" : "19TH"
       },
       "geometry" : {
         "x" : -122.26860199999999,
@@ -57,8 +52,9 @@
     },
     {
       "attributes" : {
-        "OID" : 4,
-        "Name" : "24th St. Mission (24TH)"
+        "id" : 4,
+        "name" : "24th St/Mission",
+        "abbreviation" : "24TH"
       },
       "geometry" : {
         "x" : -122.41814299999999,
@@ -67,428 +63,9 @@
     },
     {
       "attributes" : {
-        "OID" : 5,
-        "Name" : "Ashby (ASHB)"
-      },
-      "geometry" : {
-        "x" : -122.27006199999994,
-        "y" : 37.852803000000051
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 6,
-        "Name" : "Balboa Park (BALB)"
-      },
-      "geometry" : {
-        "x" : -122.44750599999998,
-        "y" : 37.721585000000061
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 7,
-        "Name" : "Bay Fair (BAYF)"
-      },
-      "geometry" : {
-        "x" : -122.12651399999999,
-        "y" : 37.696924000000024
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 8,
-        "Name" : "Castro Valley (CAST)"
-      },
-      "geometry" : {
-        "x" : -122.07560199999995,
-        "y" : 37.690746000000047
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 9,
-        "Name" : "Civic Center/UN Plaza (CIVC)"
-      },
-      "geometry" : {
-        "x" : -122.41412299999996,
-        "y" : 37.779732000000024
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 10,
-        "Name" : "Coliseum/Oakland Airport (COLS)"
-      },
-      "geometry" : {
-        "x" : -122.19686899999999,
-        "y" : 37.753661000000079
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 11,
-        "Name" : "Colma (COLM)"
-      },
-      "geometry" : {
-        "x" : -122.46623299999999,
-        "y" : 37.684638000000064
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 12,
-        "Name" : "Concord (CONC)"
-      },
-      "geometry" : {
-        "x" : -122.02909499999998,
-        "y" : 37.973737000000028
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 13,
-        "Name" : "Daly City (DALY)"
-      },
-      "geometry" : {
-        "x" : -122.46908099999996,
-        "y" : 37.706121000000053
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 14,
-        "Name" : "Downtown Berkeley (DBRK)"
-      },
-      "geometry" : {
-        "x" : -122.26813299999998,
-        "y" : 37.870104000000026
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 15,
-        "Name" : "El Cerrito del Norte (DELN)"
-      },
-      "geometry" : {
-        "x" : -122.31679399999996,
-        "y" : 37.925086000000078
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 16,
-        "Name" : "Dublin/Pleasanton (DUBL)"
-      },
-      "geometry" : {
-        "x" : -121.89917899999995,
-        "y" : 37.701687000000049
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 17,
-        "Name" : "Embarcadero (EMBR)"
-      },
-      "geometry" : {
-        "x" : -122.39701999999994,
-        "y" : 37.79287400000004
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 18,
-        "Name" : "Fremont (FRMT)"
-      },
-      "geometry" : {
-        "x" : -121.97660799999994,
-        "y" : 37.557465000000036
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 19,
-        "Name" : "Fruitvale (FTVL)"
-      },
-      "geometry" : {
-        "x" : -122.22417499999995,
-        "y" : 37.77483600000005
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 20,
-        "Name" : "Glen Park (GLEN)"
-      },
-      "geometry" : {
-        "x" : -122.43381699999998,
-        "y" : 37.73306400000007
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 21,
-        "Name" : "Hayward (HAYW)"
-      },
-      "geometry" : {
-        "x" : -122.08701799999994,
-        "y" : 37.669723000000033
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 22,
-        "Name" : "Lafayette (LAFY)"
-      },
-      "geometry" : {
-        "x" : -122.12462999999997,
-        "y" : 37.893176000000039
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 23,
-        "Name" : "Lake Merritt (LAKE)"
-      },
-      "geometry" : {
-        "x" : -122.26517999999999,
-        "y" : 37.797027000000071
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 24,
-        "Name" : "MacArthur (MCAR)"
-      },
-      "geometry" : {
-        "x" : -122.26703999999995,
-        "y" : 37.829065000000071
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 25,
-        "Name" : "Millbrae (MLBR)"
-      },
-      "geometry" : {
-        "x" : -122.38670199999996,
-        "y" : 37.600271000000077
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 26,
-        "Name" : "Montgomery St. (MONT)"
-      },
-      "geometry" : {
-        "x" : -122.40106599999996,
-        "y" : 37.789405000000045
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 27,
-        "Name" : "North Berkeley (NBRK)"
-      },
-      "geometry" : {
-        "x" : -122.28343999999998,
-        "y" : 37.87396700000005
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 28,
-        "Name" : "North Concord/Martinez (NCON)"
-      },
-      "geometry" : {
-        "x" : -122.02465299999994,
-        "y" : 38.003193000000067
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 29,
-        "Name" : "Oakland Airport (OAKL)"
-      },
-      "geometry" : {
-        "x" : -122.21219099999996,
-        "y" : 37.713238000000047
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 30,
-        "Name" : "Orinda (ORIN)"
-      },
-      "geometry" : {
-        "x" : -122.18379099999999,
-        "y" : 37.878361000000041
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 31,
-        "Name" : "Pleasant Hill/Contra Costa Centre (PHIL)"
-      },
-      "geometry" : {
-        "x" : -122.05601199999995,
-        "y" : 37.928468000000066
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 32,
-        "Name" : "Pittsburg/Bay Point (PITT)"
-      },
-      "geometry" : {
-        "x" : -121.94515399999995,
-        "y" : 38.018914000000052
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 33,
-        "Name" : "El Cerrito Plaza (PLZA)"
-      },
-      "geometry" : {
-        "x" : -122.29890399999999,
-        "y" : 37.90263200000004
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 34,
-        "Name" : "Powell St. (POWL)"
-      },
-      "geometry" : {
-        "x" : -122.40797399999997,
-        "y" : 37.784471000000053
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 35,
-        "Name" : "Richmond (RICH)"
-      },
-      "geometry" : {
-        "x" : -122.35309899999999,
-        "y" : 37.936853000000042
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 36,
-        "Name" : "Rockridge (ROCK)"
-      },
-      "geometry" : {
-        "x" : -122.25137099999995,
-        "y" : 37.844702000000041
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 37,
-        "Name" : "San Leandro (SANL)"
-      },
-      "geometry" : {
-        "x" : -122.16084399999994,
-        "y" : 37.721947000000057
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 38,
-        "Name" : "San Bruno (SBRN)"
-      },
-      "geometry" : {
-        "x" : -122.41628699999995,
-        "y" : 37.637761000000069
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 39,
-        "Name" : "San Francisco Int'l Airport (SFIA)"
-      },
-      "geometry" : {
-        "x" : -122.39240899999999,
-        "y" : 37.615966000000071
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 40,
-        "Name" : "South Hayward (SHAY)"
-      },
-      "geometry" : {
-        "x" : -122.05718899999999,
-        "y" : 37.634375000000034
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 41,
-        "Name" : "South San Francisco (SSAN)"
-      },
-      "geometry" : {
-        "x" : -122.44395999999995,
-        "y" : 37.664245000000051
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 42,
-        "Name" : "Union City (UCTY)"
-      },
-      "geometry" : {
-        "x" : -122.01738799999998,
-        "y" : 37.590630000000033
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 43,
-        "Name" : "Warm Springs/South Fremont (WSPR)"
-      },
-      "geometry" : {
-        "x" : -121.93931299999997,
-        "y" : 37.502171000000033
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 44,
-        "Name" : "Walnut Creek (WCRK)"
-      },
-      "geometry" : {
-        "x" : -122.06752699999998,
-        "y" : 37.905522000000076
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 45,
-        "Name" : "West Dublin/Pleasanton (WDUB)"
-      },
-      "geometry" : {
-        "x" : -121.92823999999996,
-        "y" : 37.699756000000036
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 46,
-        "Name" : "West Oakland (WOAK)"
-      },
-      "geometry" : {
-        "x" : -122.29513999999995,
-        "y" : 37.804872000000046
-      }
-    },
-    {
-      "attributes" : {
-        "OID" : 47,
-        "Name" : "Antioch Station (ANTI)"
+        "id" : 5,
+        "name" : "Antioch",
+        "abbreviation" : "ANTI"
       },
       "geometry" : {
         "x" : -121.77991646599997,
@@ -497,12 +74,475 @@
     },
     {
       "attributes" : {
-        "OID" : 48,
-        "Name" : "Pittsburg Center (PCTR)"
+        "id" : 6,
+        "name" : "Ashby",
+        "abbreviation" : "ASHB"
+      },
+      "geometry" : {
+        "x" : -122.27006199999994,
+        "y" : 37.852803000000051
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 7,
+        "name" : "Balboa Park",
+        "abbreviation" : "BALB"
+      },
+      "geometry" : {
+        "x" : -122.44750599999998,
+        "y" : 37.721585000000061
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 8,
+        "name" : "Bay Fair",
+        "abbreviation" : "BAYF"
+      },
+      "geometry" : {
+        "x" : -122.12651399999999,
+        "y" : 37.696924000000024
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 9,
+        "name" : "Castro Valley",
+        "abbreviation" : "CAST"
+      },
+      "geometry" : {
+        "x" : -122.07560199999995,
+        "y" : 37.690746000000047
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 10,
+        "name" : "Civic Center/UN Plaza",
+        "abbreviation" : "CIVC"
+      },
+      "geometry" : {
+        "x" : -122.41412299999996,
+        "y" : 37.779732000000024
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 11,
+        "name" : "Colma",
+        "abbreviation" : "COLM"
+      },
+      "geometry" : {
+        "x" : -122.46623299999999,
+        "y" : 37.684638000000064
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 12,
+        "name" : "Coliseum",
+        "abbreviation" : "COLS"
+      },
+      "geometry" : {
+        "x" : -122.19686899999999,
+        "y" : 37.753661000000079
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 13,
+        "name" : "Concord",
+        "abbreviation" : "CONC"
+      },
+      "geometry" : {
+        "x" : -122.02909499999998,
+        "y" : 37.973737000000028
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 14,
+        "name" : "Daly City",
+        "abbreviation" : "DALY"
+      },
+      "geometry" : {
+        "x" : -122.46908099999996,
+        "y" : 37.706121000000053
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 15,
+        "name" : "Downtown Berkeley",
+        "abbreviation" : "DBRK"
+      },
+      "geometry" : {
+        "x" : -122.26813299999998,
+        "y" : 37.870104000000026
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 16,
+        "name" : "El Cerrito del Norte",
+        "abbreviation" : "DELN"
+      },
+      "geometry" : {
+        "x" : -122.31679399999996,
+        "y" : 37.925086000000078
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 17,
+        "name" : "Dublin/Pleasanton",
+        "abbreviation" : "DUBL"
+      },
+      "geometry" : {
+        "x" : -121.89917899999995,
+        "y" : 37.701687000000049
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 18,
+        "name" : "Embarcadero",
+        "abbreviation" : "EMBR"
+      },
+      "geometry" : {
+        "x" : -122.39701999999994,
+        "y" : 37.79287400000004
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 19,
+        "name" : "Fremont",
+        "abbreviation" : "FRMT"
+      },
+      "geometry" : {
+        "x" : -121.97660799999994,
+        "y" : 37.557465000000036
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 20,
+        "name" : "Fruitvale",
+        "abbreviation" : "FTVL"
+      },
+      "geometry" : {
+        "x" : -122.22417499999995,
+        "y" : 37.77483600000005
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 21,
+        "name" : "Glen Park",
+        "abbreviation" : "GLEN"
+      },
+      "geometry" : {
+        "x" : -122.43381699999998,
+        "y" : 37.73306400000007
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 22,
+        "name" : "Hayward",
+        "abbreviation" : "HAYW"
+      },
+      "geometry" : {
+        "x" : -122.08701799999994,
+        "y" : 37.669723000000033
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 23,
+        "name" : "Lafayette",
+        "abbreviation" : "LAFY"
+      },
+      "geometry" : {
+        "x" : -122.12462999999997,
+        "y" : 37.893176000000039
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 24,
+        "name" : "Lake Merritt",
+        "abbreviation" : "LAKE"
+      },
+      "geometry" : {
+        "x" : -122.26517999999999,
+        "y" : 37.797027000000071
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 25,
+        "name" : "MacArthur",
+        "abbreviation" : "MCAR"
+      },
+      "geometry" : {
+        "x" : -122.26703999999995,
+        "y" : 37.829065000000071
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 26,
+        "name" : "Millbrae",
+        "abbreviation" : "MLBR"
+      },
+      "geometry" : {
+        "x" : -122.38670199999996,
+        "y" : 37.600271000000077
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 27,
+        "name" : "Montgomery St",
+        "abbreviation" : "MONT"
+      },
+      "geometry" : {
+        "x" : -122.40106599999996,
+        "y" : 37.789405000000045
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 28,
+        "name" : "North Berkeley",
+        "abbreviation" : "NBRK"
+      },
+      "geometry" : {
+        "x" : -122.28343999999998,
+        "y" : 37.87396700000005
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 29,
+        "name" : "North Concord/Martinez",
+        "abbreviation" : "NCON"
+      },
+      "geometry" : {
+        "x" : -122.02465299999994,
+        "y" : 38.003193000000067
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 30,
+        "name" : "Oakland International Airport (OAK)",
+        "abbreviation" : "OAKL"
+      },
+      "geometry" : {
+        "x" : -122.21219099999996,
+        "y" : 37.713238000000047
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 31,
+        "name" : "Orinda",
+        "abbreviation" : "ORIN"
+      },
+      "geometry" : {
+        "x" : -122.18379099999999,
+        "y" : 37.878361000000041
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 32,
+        "name" : "Pittsburg Center",
+        "abbreviation" : "PCTR"
       },
       "geometry" : {
         "x" : -121.88925942099996,
         "y" : 38.016903568000032
+      }
+    }
+    {
+      "attributes" : {
+        "id" : 33,
+        "name" : "Pleasant Hill/Contra Costa Centre",
+        "abbreviation" : "PHIL"
+      },
+      "geometry" : {
+        "x" : -122.05601199999995,
+        "y" : 37.928468000000066
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 34,
+        "name" : "Pittsburg / Bay Point",
+        "abbreviation" : "PITT"
+      },
+      "geometry" : {
+        "x" : -121.94515399999995,
+        "y" : 38.018914000000052
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 35,
+        "name" : "El Cerrito Plaza",
+        "abbreviation" : "PLZA"
+      },
+      "geometry" : {
+        "x" : -122.29890399999999,
+        "y" : 37.90263200000004
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 36,
+        "name" : "Powell St",
+        "abbreviation" : "POWL"
+      },
+      "geometry" : {
+        "x" : -122.40797399999997,
+        "y" : 37.784471000000053
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 37,
+        "name" : "Richmond",
+        "abbreviation" : "RICH"
+      },
+      "geometry" : {
+        "x" : -122.35309899999999,
+        "y" : 37.936853000000042
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 38,
+        "name" : "Rockridge",
+        "abbreviation" : "ROCK"
+      },
+      "geometry" : {
+        "x" : -122.25137099999995,
+        "y" : 37.844702000000041
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 39,
+        "name" : "San Leandro",
+        "abbreviation" : "SANL"
+      },
+      "geometry" : {
+        "x" : -122.16084399999994,
+        "y" : 37.721947000000057
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 40,
+        "name" : "San Bruno",
+        "abbreviation" : "SBRN"
+      },
+      "geometry" : {
+        "x" : -122.41628699999995,
+        "y" : 37.637761000000069
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 41,
+        "name" : "San Francisco International Airport (SFO)",
+        "abbreviation" : "SFIA"
+      },
+      "geometry" : {
+        "x" : -122.39240899999999,
+        "y" : 37.615966000000071
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 42,
+        "name" : "South Hayward",
+        "abbreviation" : "SHAY"
+      },
+      "geometry" : {
+        "x" : -122.05718899999999,
+        "y" : 37.634375000000034
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 43,
+        "name" : "South San Francisco",
+        "abbreviation" : "SSAN"
+      },
+      "geometry" : {
+        "x" : -122.44395999999995,
+        "y" : 37.664245000000051
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 44,
+        "name" : "Union City",
+        "abbreviation" : "UCTY"
+      },
+      "geometry" : {
+        "x" : -122.01738799999998,
+        "y" : 37.590630000000033
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 45,
+        "name" : "Walnut Creek",
+        "abbreviation" : "WCRK"
+      },
+      "geometry" : {
+        "x" : -122.06752699999998,
+        "y" : 37.905522000000076
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 46,
+        "name" : "West Dublin/Pleasanton",
+        "abbreviation" : "WDUB"
+      },
+      "geometry" : {
+        "x" : -121.92823999999996,
+        "y" : 37.699756000000036
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 47,
+        "name" : "West Oakland",
+        "abbreviation" : "WOAK"
+      },
+      "geometry" : {
+        "x" : -122.29513999999995,
+        "y" : 37.804872000000046
+      }
+    },
+    {
+      "attributes" : {
+        "id" : 48,
+        "name" : "Warm Springs/South Fremont",
+        "abbreviation" : "WSPR"
+      },
+      "geometry" : {
+        "x" : -121.93931299999997,
+        "y" : 37.502171000000033
       }
     }
   ]

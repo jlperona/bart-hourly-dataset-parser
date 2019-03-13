@@ -1,41 +1,21 @@
 {
-  "displayFieldName" : "",
-  "fieldAliases" : {
-    "OBJECTID" : "OID",
-    "Name" : "Name",
-    "Shape_Length" : "Shape_Length"
-  },
   "geometryType" : "esriGeometryPolyline",
-  "spatialReference" : {
-    "wkid" : 4326,
-    "latestWkid" : 4326,
-    "vcsWkid" : 5773,
-    "latestVcsWkid" : 5773
-  },
   "fields" : [
     {
-      "name" : "OBJECTID",
+      "name" : "id",
       "type" : "esriFieldTypeOID",
-      "alias" : "OID"
     },
     {
-      "name" : "Name",
+      "name" : "name",
       "type" : "esriFieldTypeString",
-      "alias" : "Name",
       "length" : 320
-    },
-    {
-      "name" : "Shape_Length",
-      "type" : "esriFieldTypeDouble",
-      "alias" : "Shape_Length"
     }
   ],
   "features" : [
     {
       "attributes" : {
-        "OBJECTID" : 2,
-        "Name" : "MCAR - ROCK",
-        "Shape_Length" : 0.025046925754753174
+        "id" : 1,
+        "name" : "MCAR-ROCK"
       },
       "geometry" : {
         "paths" : [
@@ -362,9 +342,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 3,
-        "Name" : "ROCK - ORIN",
-        "Shape_Length" : 0.075850821021087769
+        "id" : 2,
+        "name" : "ROCK-ORIN"
       },
       "geometry" : {
         "paths" : [
@@ -671,9 +650,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 4,
-        "Name" : "ORIN - LAFY",
-        "Shape_Length" : 0.065890980905818047
+        "id" : 3,
+        "name" : "ORIN-LAFY"
       },
       "geometry" : {
         "paths" : [
@@ -1404,9 +1382,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 5,
-        "Name" : "LAFY - WCRK",
-        "Shape_Length" : 0.061122808188514732
+        "id" : 4,
+        "name" : "LAFY-WCRK"
       },
       "geometry" : {
         "paths" : [
@@ -2025,9 +2002,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 6,
-        "Name" : "WCRK - PHIL",
-        "Shape_Length" : 0.026274221514788743
+        "id" : 5,
+        "name" : "WCRK-PHIL"
       },
       "geometry" : {
         "paths" : [
@@ -2446,9 +2422,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 7,
-        "Name" : "PHIL - CONC",
-        "Shape_Length" : 0.064822379458081683
+        "id" : 6,
+        "name" : "PHIL-CONC"
       },
       "geometry" : {
         "paths" : [
@@ -3607,9 +3582,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 8,
-        "Name" : "CONC - NCON",
-        "Shape_Length" : 0.033666391926569839
+        "id" : 7,
+        "name" : "CONC-NCON"
       },
       "geometry" : {
         "paths" : [
@@ -4336,9 +4310,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 9,
-        "Name" : "NCON - PITT",
-        "Shape_Length" : 0.085685550771181812
+        "id" : 8,
+        "name" : "NCON-PITT"
       },
       "geometry" : {
         "paths" : [
@@ -5433,9 +5406,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 10,
-        "Name" : "PITT - PCTR",
-        "Shape_Length" : 0.056336167454687794
+        "id" : 9,
+        "name" : "PITT-PCTR"
       },
       "geometry" : {
         "paths" : [
@@ -5582,9 +5554,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 11,
-        "Name" : "PCTR - ANTC",
-        "Shape_Length" : 0.11194865999157508
+        "id" : 10,
+        "name" : "PCTR-ANTI"
       },
       "geometry" : {
         "paths" : [
@@ -5647,9 +5618,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 15,
-        "Name" : "WOAK - 12TH",
-        "Shape_Length" : 0.027520048635682023
+        "id" : 11,
+        "name" : "WOAK-12TH"
       },
       "geometry" : {
         "paths" : [
@@ -6152,9 +6122,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 32,
-        "Name" : "SBRN - SFIA",
-        "Shape_Length" : 0.03533475121435966
+        "id" : 12,
+        "name" : "SBRN-SFIA"
       },
       "geometry" : {
         "paths" : [
@@ -6453,9 +6422,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 34,
-        "Name" : "SFIA - MLBR",
-        "Shape_Length" : 0.027311459607232493
+        "id" : 13,
+        "name" : "SFIA-MLBR"
       },
       "geometry" : {
         "paths" : [
@@ -6712,9 +6680,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 43,
-        "Name" : "HAYW - BAYF",
-        "Shape_Length" : 0.047958760612967569
+        "id" : 14,
+        "name" : "HAYW-BAYF"
       },
       "geometry" : {
         "paths" : [
@@ -6841,9 +6808,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 49,
-        "Name" : "LAKE - 12TH",
-        "Shape_Length" : 0.011744129246877981
+        "id" : 15,
+        "name" : "LAKE-12TH"
       },
       "geometry" : {
         "paths" : [
@@ -6970,9 +6936,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 53,
-        "Name" : "MCAR - ASHB",
-        "Shape_Length" : 0.025136067647375259
+        "id" : 16,
+        "name" : "MCAR-ASHB"
       },
       "geometry" : {
         "paths" : [
@@ -7435,9 +7400,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 64,
-        "Name" : "WARM - FRMT",
-        "Shape_Length" : 0.072026866302698361
+        "id" : 17,
+        "name" : "WSPR-FRMT"
       },
       "geometry" : {
         "paths" : [
@@ -7788,9 +7752,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 66,
-        "Name" : "FRMT - UCTY",
-        "Shape_Length" : 0.052715727356135118
+        "id" : 18,
+        "name" : "FRMT-UCTY"
       },
       "geometry" : {
         "paths" : [
@@ -8141,9 +8104,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 67,
-        "Name" : "UCTY - SHAY",
-        "Shape_Length" : 0.059652520912393425
+        "id" : 19,
+        "name" : "UCTY-SHAY"
       },
       "geometry" : {
         "paths" : [
@@ -8650,9 +8612,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 68,
-        "Name" : "SHAY - HAYW",
-        "Shape_Length" : 0.046441899744695321
+        "id" : 20,
+        "name" : "SHAY-HAYW"
       },
       "geometry" : {
         "paths" : [
@@ -8983,9 +8944,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 70,
-        "Name" : "BAYF - CAST",
-        "Shape_Length" : 0.053502957887478705
+        "id" : 21,
+        "name" : "BAYF-CAST"
       },
       "geometry" : {
         "paths" : [
@@ -11604,9 +11564,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 71,
-        "Name" : "SANL - COLS",
-        "Shape_Length" : 0.048130030929481725
+        "id" : 22,
+        "name" : "SANL-COLS"
       },
       "geometry" : {
         "paths" : [
@@ -11753,9 +11712,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 75,
-        "Name" : "LAKE - WOAK",
-        "Shape_Length" : 0.032154819977730918
+        "id" : 23,
+        "name" : "LAKE-WOAK"
       },
       "geometry" : {
         "paths" : [
@@ -12066,9 +12024,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 91,
-        "Name" : "NBRK - PLZA",
-        "Shape_Length" : 0.033643733114829696
+        "id" : 24,
+        "name" : "NBRK-PLZA"
       },
       "geometry" : {
         "paths" : [
@@ -12763,9 +12720,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 92,
-        "Name" : "DBRK - NBRK",
-        "Shape_Length" : 0.018228267620521665
+        "id" : 25,
+        "name" : "DBRK-NBRK"
       },
       "geometry" : {
         "paths" : [
@@ -13520,9 +13476,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 93,
-        "Name" : "ASHB - DBRK",
-        "Shape_Length" : 0.017913079411028748
+        "id" : 26,
+        "name" : "ASHB-DBRK"
       },
       "geometry" : {
         "paths" : [
@@ -14057,9 +14012,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 94,
-        "Name" : "DELN - RICH",
-        "Shape_Length" : 0.040613182451839862
+        "id" : 27,
+        "name" : "DELN-RICH"
       },
       "geometry" : {
         "paths" : [
@@ -14810,9 +14764,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 95,
-        "Name" : "PLZA - DELN",
-        "Shape_Length" : 0.028711630357905398
+        "id" : 28,
+        "name" : "PLZA-DELN"
       },
       "geometry" : {
         "paths" : [
@@ -15307,9 +15260,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 97,
-        "Name" : "19TH - MCAR",
-        "Shape_Length" : 0.022736562114802881
+        "id" : 29,
+        "name" : "19TH-MCAR"
       },
       "geometry" : {
         "paths" : [
@@ -15556,9 +15508,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 98,
-        "Name" : "12TH - 19TH",
-        "Shape_Length" : 0.0053930346149508226
+        "id" : 30,
+        "name" : "12TH-19TH"
       },
       "geometry" : {
         "paths" : [
@@ -15601,9 +15552,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 112,
-        "Name" : "DALY - COLM",
-        "Shape_Length" : 0.023003032728461971
+        "id" : 31,
+        "name" : "DALY-COLM"
       },
       "geometry" : {
         "paths" : [
@@ -16006,9 +15956,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 114,
-        "Name" : "SSAN - SBRN",
-        "Shape_Length" : 0.038995904255175441
+        "id" : 32,
+        "name" : "SSAN-SBRN"
       },
       "geometry" : {
         "paths" : [
@@ -16251,9 +16200,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 115,
-        "Name" : "COLM - SSAN",
-        "Shape_Length" : 0.030498235112099314
+        "id" : 33,
+        "name" : "COLM-SSAN"
       },
       "geometry" : {
         "paths" : [
@@ -16500,9 +16448,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 116,
-        "Name" : "SBRN - MLBR",
-        "Shape_Length" : 0.048083009101124598
+        "id" : 34,
+        "name" : "SBRN-MLBR"
       },
       "geometry" : {
         "paths" : [
@@ -16885,9 +16832,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 120,
-        "Name" : "WDUB - DUBL",
-        "Shape_Length" : 0.028103554066654372
+        "id" : 35,
+        "name" : "WDUB-DUBL"
       },
       "geometry" : {
         "paths" : [
@@ -18162,9 +18108,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 121,
-        "Name" : "CAST - WDUB",
-        "Shape_Length" : 0.15102456898269179
+        "id" : 36,
+        "name" : "CAST-WDUB"
       },
       "geometry" : {
         "paths" : [
@@ -31767,9 +31712,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 126,
-        "Name" : "BAYF - SANL",
-        "Shape_Length" : 0.042662890469547854
+        "id" : 37,
+        "name" : "BAYF-SANL"
       },
       "geometry" : {
         "paths" : [
@@ -31940,9 +31884,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 128,
-        "Name" : "COLS - FTVL",
-        "Shape_Length" : 0.034180236026259317
+        "id" : 38,
+        "name" : "COLS-FTVL"
       },
       "geometry" : {
         "paths" : [
@@ -32225,9 +32168,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 130,
-        "Name" : "FTVL - 19TH",
-        "Shape_Length" : 0.046865299207366498
+        "id" : 39,
+        "name" : "FTVL-19TH"
       },
       "geometry" : {
         "paths" : [
@@ -32742,9 +32684,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 134,
-        "Name" : "BALB - DALY",
-        "Shape_Length" : 0.029681518741366882
+        "id" : 40,
+        "name" : "BALB-DALY"
       },
       "geometry" : {
         "paths" : [
@@ -33267,9 +33208,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 135,
-        "Name" : "GLEN - BALB",
-        "Shape_Length" : 0.018783838648951105
+        "id" : 41,
+        "name" : "GLEN-BALB"
       },
       "geometry" : {
         "paths" : [
@@ -33496,9 +33436,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 136,
-        "Name" : "POWL - CIVC",
-        "Shape_Length" : 0.0077650958004342133
+        "id" : 42,
+        "name" : "POWL-CIVC"
       },
       "geometry" : {
         "paths" : [
@@ -33533,9 +33472,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 137,
-        "Name" : "MONT - POWL",
-        "Shape_Length" : 0.0084779665454825116
+        "id" : 43,
+        "name" : "MONT-POWL"
       },
       "geometry" : {
         "paths" : [
@@ -33582,9 +33520,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 138,
-        "Name" : "EMBR - MONT",
-        "Shape_Length" : 0.0053285777612134162
+        "id" : 44,
+        "name" : "EMBR-MONT"
       },
       "geometry" : {
         "paths" : [
@@ -33615,9 +33552,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 139,
-        "Name" : "CIVC - 16TH",
-        "Shape_Length" : 0.017246138336186646
+        "id" : 45,
+        "name" : "CIVC-16TH"
       },
       "geometry" : {
         "paths" : [
@@ -33764,9 +33700,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 140,
-        "Name" : "24TH - GLEN",
-        "Shape_Length" : 0.026360525023549311
+        "id" : 46,
+        "name" : "24TH-GLEN"
       },
       "geometry" : {
         "paths" : [
@@ -33953,9 +33888,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 141,
-        "Name" : "16TH - 24TH",
-        "Shape_Length" : 0.012685821065423203
+        "id" : 47,
+        "name" : "16TH-24TH"
       },
       "geometry" : {
         "paths" : [
@@ -34014,9 +33948,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 142,
-        "Name" : "WOAK - EMBR",
-        "Shape_Length" : 0.10521115732010351
+        "id" : 48,
+        "name" : "WOAK-EMBR"
       },
       "geometry" : {
         "paths" : [
@@ -35043,9 +34976,8 @@
     },
     {
       "attributes" : {
-        "OBJECTID" : 144,
-        "Name" : "COLS - OAKL",
-        "Shape_Length" : 0.049378283613549623
+        "id" : 49,
+        "name" : "COLS-OAKL"
       },
       "geometry" : {
         "paths" : [

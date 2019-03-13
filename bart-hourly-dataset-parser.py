@@ -5,23 +5,23 @@ import pynumparser
 from datetime import datetime
 
 station_names = {
-    '12TH' : '12th Street / Oakland City Center',
-    '16TH' : '16th Street Mission',
-    '19TH' : '19th Street / Oakland',
-    '24TH' : '24th Street Mission',
+    '12TH' : '12th St/Oakland City Center',
+    '16TH' : '16th St Mission',
+    '19TH' : '19th St/Oakland',
+    '24TH' : '24th St Mission',
     'ANTI' : 'Antioch',
     'ASHB' : 'Ashby',
     'BALB' : 'Balboa Park',
     'BAYF' : 'Bay Fair',
     'CAST' : 'Castro Valley',
-    'CIVC' : 'Civic Center / UN Plaza',
+    'CIVC' : 'Civic Center/UN Plaza',
     'COLM' : 'Colma',
     'COLS' : 'Coliseum',
     'CONC' : 'Concord',
     'DALY' : 'Daly City',
     'DBRK' : 'Downtown Berkeley',
     'DELN' : 'El Cerrito del Norte',
-    'DUBL' : 'Dublin / Pleasanton',
+    'DUBL' : 'Dublin/Pleasanton',
     'EMBR' : 'Embarcadero',
     'FRMT' : 'Fremont',
     'FTVL' : 'Fruitvale',
@@ -31,15 +31,16 @@ station_names = {
     'LAKE' : 'Lake Merritt',
     'MCAR' : 'MacArthur',
     'MLBR' : 'Millbrae',
-    'MONT' : 'Montgomery Street',
+    'MONT' : 'Montgomery St',
     'NBRK' : 'North Berkeley',
-    'NCON' : 'North Concord / Martinez',
+    'NCON' : 'North Concord/Martinez',
     'OAKL' : 'Oakland International Airport (OAK)',
     'ORIN' : 'Orinda',
-    'PHIL' : 'Pleasant Hill / Contra Costa Centre',
-    'PITT' : 'Pittsburg / Bay Point',
+    'PCTR' : 'Pittsburg Center',
+    'PHIL' : 'Pleasant Hill/Contra Costa Centre',
+    'PITT' : 'Pittsburg/Bay Point',
     'PLZA' : 'El Cerrito Plaza',
-    'POWL' : 'Powell Street',
+    'POWL' : 'Powell St',
     'RICH' : 'Richmond',
     'ROCK' : 'Rockridge',
     'SANL' : 'San Leandro',
@@ -49,9 +50,9 @@ station_names = {
     'SSAN' : 'South San Francisco',
     'UCTY' : 'Union City',
     'WCRK' : 'Walnut Creek',
-    'WSPR' : 'Warm Springs / South Fremont'
-    'WDUB' : 'West Dublin / Pleasanton',
+    'WDUB' : 'West Dublin/Pleasanton',
     'WOAK' : 'West Oakland'
+    'WSPR' : 'Warm Springs/South Fremont'
 }
 
 def valid_date(input):
@@ -73,7 +74,7 @@ def valid_type(input):
 parser = argparse.ArgumentParser(
     description = 'Take in BART origin-destination data and a source graph. Output a weighted graph.')
 
-# mandatory / positional arguments
+# mandatory/positional arguments
 parser.add_argument('inputfile', type = valid_type, metavar = 'input.[gexf,net]',
     help = 'Graph to use as the basis. Supports GEXF and Pajek NET. Format will be guessed from the file extension.')
 parser.add_argument('csvfile', metavar = 'input.csv',
