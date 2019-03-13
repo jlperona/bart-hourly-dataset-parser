@@ -53,10 +53,9 @@
     {
       "attributes" : {
         "id" : 4,
-        "name" : "24th St/Mission",
+        "name" : "24th St Mission",
         "abbreviation" : "24TH"
       },
-      "geometry" : {
         "x" : -122.41814299999999,
         "y" : 37.752470000000073
       }
@@ -383,7 +382,7 @@
     {
       "attributes" : {
         "id" : 34,
-        "name" : "Pittsburg / Bay Point",
+        "name" : "Pittsburg/Bay Point",
         "abbreviation" : "PITT"
       },
       "geometry" : {
