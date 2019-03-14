@@ -140,7 +140,7 @@ I'm not sure why.
 #### eBART
 
 The eBART extension to *Pittsburg Center* and *Antioch* opened for revenue service on 2018-05-26.
-Dates before this will have no traffic to either of these nodes, as these nodes extend past a terminal station.
+Dates before this will have no traffic to either of these stations, as these nodes extend past a terminal station.
 This may pose a problem for certain programs, such as Gephi.
 
 Note that BART is inconsistent in their 4-letter station acronyms for *Antioch*.
@@ -211,6 +211,6 @@ In the future, I will consider adding this.
 
 I have a couple of changes in mind for the future:
 
-* Add new and recent BART expansions to the script
+* Add the new BART expansions to the script
 * Update the script logic to account for the Millbrae and SFO edge change, described above
 * Add the ability to read and write the rest of the graph file formats that NetworkX supports
