@@ -1,12 +1,13 @@
 # bart-hourly-dataset-parser
 
 Parses San Francisco BART hourly origin-destination data into graph files.
+For a Shiny app that is heavily based on this, see [`bart-passenger-heatmap`](https://github.com/jlperona/bart-passenger-heatmap).
 
 ## Background
 
 ### Reasoning
 
-This script is designed to parse BART hourly origin-destination files, and output graph files.
+This script is designed to parse BART hourly origin-destination files and output weighted graph files.
 Parsing these into graph files is useful for visualizing the BART network, due to the differing edge weights.
 The origin-destination data is provided on [their website](https://www.bart.gov/about/reports/ridership), available starting from 2011-01-01.
 
@@ -14,12 +15,11 @@ The origin-destination data is provided on [their website](https://www.bart.gov/
 
 The script does the following:
 
-* Parses an input graph to set up the network topology.
-* Reads in the hourly data line by line.
-* For each origin-destination pair, calculate the shortest path between the two stations.
-    * Due to the current topology of the network, there will only ever be one shortest path.
-* Add the number of passengers to each edge on the shortest path.
-* Output the graph file, in the desired format.
+1. Parses an input graph to set up the network topology.
+2. Reads in the hourly data line by line.
+3. For each origin-destination pair, calculate the shortest path between the two stations. Due to the current topology of the network, there will only ever be one shortest path.
+4. Add the number of passengers to each edge on the shortest path.
+5. Output the graph file, in the desired format.
 
 ## Python
 
@@ -34,8 +34,7 @@ The script uses the following packages that aren't provided in base Python:
 * `networkx` for parsing the input graph.
 * `pynumparser` for range parsing the hour and weekday arguments.
 
-Both of these can be found on `pip`.
-Feel free to install them in any way you wish.
+Both of these can be found on `pip`, but feel free to install them in any way you wish.
 
 ## Usage
 
@@ -64,7 +63,7 @@ Here is an example of a valid subset: 0-2,4,6.
 #### Subsetting by Date
 
 `--startdate` and `--enddate` allow you to subset the input data and choose a range of dates that you want to keep.
-If both flags are not provided, the script will parse all data in the input `csv`.
+If both flags are not provided, the script will parse all data in the input CSV.
 The script expects ISO 8601-style dates.
 Therefore, 25 January 2016 corresponds to 2016-01-25.
 
@@ -74,27 +73,27 @@ Therefore, 25 January 2016 corresponds to 2016-01-25.
 By default, the script defaults to an undirected graph.
 
 `-k` and `--keepweights` allow you to keep the original weights from the input graph file.
-The script will then add on the weight from the input `csv`.
+The script will then add on the weight from the input CSV.
 This is useful if you are, say, trying to grab data from multiple years, and don't want to combine the data files for each year by hand.
 This flag shouldn't be used for the first run, when initially generating data from the basic topological graph.
 The edge weights will be slightly wrong in that case.
 
 ### Positional Arguments
 
-#### input.graph
+#### `input.graph`
 
 The representation of the BART network that serves as the basis to calculate shortest paths.
-An example file has already been provided, in `data/bart.gexf`.
+An example file has already been provided at `data/bart.net`.
 Note that this file will need to be modified to keep up with expansions in the BART network.
 See the **Dataset Caveats** section below.
 
-#### bartdata.csv
+#### `bartdata.csv`
 
-The `csv` files provided by BART on [their website](https://www.bart.gov/about/reports/ridership).
+The CSV files provided by BART on [their website](https://www.bart.gov/about/reports/ridership).
 The script does a decent job in offering options to subset the data.
 If you need more detailed subsetting options, I recommend doing so with another program.
 
-#### output.graph
+#### `output.graph`
 
 The output graph file.
 Currently, the following file formats are supported:
@@ -107,7 +106,7 @@ Adding these would be fairly simple.
 
 ## Dataset Caveats
 
-The following sections were written and are true as of 2018-06-05.
+The following sections were written and are true as of 2019-03-15.
 Changes to the BART network will change the validity of the following sections.
 
 ### Network Changes
