@@ -1,7 +1,7 @@
 # bart-hourly-dataset-parser
 
 Parses San Francisco BART hourly origin-destination data into graph files.
-For a Shiny app that is heavily based on this, see [`bart-passenger-heatmap`](https://github.com/jlperona/bart-passenger-heatmap).
+For a Shiny application that is heavily based on this, see [`bart-passenger-heatmap`](https://github.com/jlperona/bart-passenger-heatmap).
 
 ## Background
 
@@ -17,7 +17,8 @@ The script does the following:
 
 1. Parses an input graph to set up the network topology.
 2. Reads in the hourly data line by line.
-3. For each origin-destination pair, calculate the shortest path between the two stations. Due to the current topology of the network, there will only ever be one shortest path.
+3. For each origin-destination pair, calculate the shortest path between the two stations.
+    * Due to the current topology of the network, there will only ever be one shortest path.
 4. Add the number of passengers to each edge on the shortest path.
 5. Output the graph file, in the desired format.
 
@@ -34,7 +35,14 @@ The script uses the following packages that aren't provided in base Python:
 * `networkx` for parsing the input graph.
 * `pynumparser` for range parsing the hour and weekday arguments.
 
-Both of these can be found on `pip`, but feel free to install them in any way you wish.
+Both of these can be found on `pip`.
+If you'd like to set up a virtual environment, the typical code to do so is below:
+
+```
+python3 -m venv env
+source env/bin/activate
+python3 -m pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -106,7 +114,7 @@ Adding these would be fairly simple.
 
 ## Dataset Caveats
 
-The following sections were written and are true as of 2019-03-15.
+The following sections were written and are true as of 2021-07-31.
 Changes to the BART network will change the validity of the following sections.
 
 ### Network Changes
@@ -131,22 +139,18 @@ The *Warm Springs / South Fremont* station opened for revenue service on 2017-03
 Dates before this will have no traffic to this node, as this is a terminal station.
 This may pose a problem for certain programs, such as Gephi.
 
-Note that BART is inconsistent in their 4-letter station acronyms for *Warm Springs / South Fremont*.
-In their [station KML file](https://www.bart.gov/schedules/developers/geo), *Warm Springs / South Fremont* is `WARM`.
-However, in the actual data, *Warm Springs / South Fremont* is `WSPR`.
-I'm not sure why.
-
 #### eBART
 
 The eBART extension to *Pittsburg Center* and *Antioch* opened for revenue service on 2018-05-26.
 Dates before this will have no traffic to either of these stations, as these nodes extend past a terminal station.
 This may pose a problem for certain programs, such as Gephi.
 
-Note that BART is inconsistent in their 4-letter station acronyms for *Antioch*.
-In their [station KML file](https://www.bart.gov/schedules/developers/geo), *Antioch* is `ANTC`.
-However, in the actual data, *Antioch* is `ANTI`.
-*Pittsburg Center* also doesn't appear in the data at all.
-I'm not sure why.
+
+#### Milpitas and Berryessa
+
+The *Milpitas* and *Berryessa* stations opened for revenue service on 2020-06-13.
+Dates before this will have no traffic to these nodes, as Berryessa is a terminal station.
+This may pose a problem for certain programs, such as Gephi.
 
 ### Future Network Changes
 
@@ -154,40 +158,18 @@ There are also changes that have been made or planned since the last day availab
 
 #### BART to Silicon Valley
 
-The Silicon Valley BART extension in planned in two phases.
-The following stations are (currently) planned to open in fall 2019:
-
-* *Milpitas*
-* *Berryessa*
-
-The following stations are currently planned to open in 2026:
+The Silicon Valley BART extension to the following stations are currently planned to open in 2030:
 
 * *Alum Rock*
 * *Downtown San Jose*
 * *Diridon / Arena*
 * *Santa Clara*
 
-I will add these stations as these extensions open, and data becomes available for them.
+The input network file and `station_names` dictionary in `utils/input.py` will need to be modified to support these stations when they open.
 
 ### Network Changes by Time
 
 The BART network changes at certain hours of the day.
-The changes that are made are the following:
-
-#### Warm Springs / South Fremont
-
-The following lines run to *Warm Springs / South Fremont*:
-
-* Richmond - Warm Springs / South Fremont
-* Warm Springs / South Fremont - Daly City
-
-At one point, these lines ran to Warm Springs at mutually exclusive times due to a shortage of trains.
-The time change eventually disappeared.
-No changes need to be made to graph files to account for this.
-The lines run between the same stations, so there is only one shortest path to take.
-
-#### Millbrae and San Francisco International Airport (SFO)
-
 The following lines run to *Millbrae* and *San Francisco International Airport (SFO)*:
 
 * Antioch - SFO / Millbrae
@@ -195,7 +177,7 @@ The following lines run to *Millbrae* and *San Francisco International Airport (
 
 During weekdays before 21:00, the Richmond - Daly City / Millbrae continues on from Daly City to Millbrae, skipping SFO.
 After 21:00 on weekdays, and on weekends, that line terminates at Daly City.
-Instead, the Antioch - SFO / Millbrae line is extended from SFO to Millbrae.
+Instead, a separate line (the SFO-Millbrae Shuttle) runs instead.
 
 In order to be completely correct, the script should take this into account.
 Traffic that has Millbrae as one of its starting or ending points should be checked to see what day and time it occurs in.
@@ -204,12 +186,11 @@ At the other times, both the San Bruno - SFO and SFO - Millbrae edges should hav
 
 This is not a significant change, but I have not added it to the script.
 Thus, results involving those stations are slightly incorrect.
-In the future, I will consider adding this.
 
-# Future
+## Future
 
 I have a couple of changes in mind for the future:
 
-* Add the new BART expansions to the script
+* Add new BART expansions to the script
 * Update the script logic to account for the Millbrae and SFO edge change, described above
 * Add the ability to read and write the rest of the graph file formats that NetworkX supports
